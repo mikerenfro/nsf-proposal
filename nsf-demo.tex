@@ -1,0 +1,87 @@
+% !TEX TS-program = pdflatexmk
+\documentclass[12pt]{nsf-proposal}
+
+\newcommand{\dol}[2][]{\SI{#2}[\$]{#1}}
+% use as \dol[\mega\relax]{1} for $1M, \dol{123} for $123.
+\usepackage[sorting=none,sortcites=true,citestyle=numeric-comp]{biblatex}
+\setlength\bibitemsep{\baselineskip}
+\addbibresource{nsf-demo.bib}
+\begin{document}
+\chapter*{Project Summary} % 1 page max
+
+\section*{Overview}
+
+TN Tech has nearly doubled its amount of externally-funded research from \dol[\mega\relax]{11} in 2015 to \dol[\mega\relax]{20} in 2020, and plans to reach \dol[\mega\relax]{40} of externally-funded research by 2025.
+
+\section*{Intellectual Merit}
+
+The acquisition of Warp~1 will enable research projects aligned with four of NSF's 10 Big Ideas.
+
+\section*{Broader Impacts}
+
+TN Tech has a strong history using HPC in workforce development at all levels.
+
+\chapter{Project Description}
+
+\section{Information about the Proposal}
+
+\begin{description}[labelwidth=1.7in,leftmargin=\labelwidth,labelsep=0pt]
+\item[Instrument Location:] Tennessee Tech University, Clement Hall Room NNN
+\item[Instrument Type:] HPC cluster with high-speed networking and data storage for active jobs
+\end{description}
+
+\section{Research Activities to be Enabled}
+
+This cluster will provide an easily-accessible computing facility that immediately benefits TN Tech's research efforts across several departments and research centers to advance both fundamental and applied research in science and engineering.
+
+\subsection{Intellectual Merit}
+
+The proposed Warp~1 cluster will enable research projects aligned with four of NSF's 10 Big Ideas.
+
+\subsection{Users and Representative Scientific Research}
+
+\begin{table}
+\centering
+\caption{\label{tab:users} Selection of externally-supported users impacted by the proposed equipment}
+\begin{tabular}{P{1.7in}P{1.5in}P{1.6in}P{1.25in}} \toprule
+{\bfseries Field} & {\bfseries User} & {\bfseries Applications} & {\bfseries Support} \\ \midrule
+Department 1 & Faculty 1 & Materials science & NSF \\
+             & Faculty 2 & Molecular dynamics & CWRU, DOD \\ \addlinespace
+
+Department 2 & Faculty 3 & Fundamental science & NSF \\ \bottomrule
+\end{tabular}
+\end{table}
+
+This section details a selection of research projects.
+
+\subsubsection{Next-Generation Genomics: Faculty 1, Department 1; Faculty 2, Department 2; Faculty 3, Department 3 (Other University)}
+
+(5 faculty, 1 postdoc, 7 graduate students, 2 undergraduate students)
+Funded projects in our labs use HPC resources to (1) generate genome-wide DNA data to inform on the management of endangered species \cite{torkamaneh2016}, (2) survey community composition based on DNA extracted from environmental sources \cite{watts2019}, and (3) investigate evolutionary processes in model organisms \cite{hurt2021}.
+
+\section*{Broader Impacts}
+
+Here we have a statement of broader impacts, which is often required as its own heading.
+
+\subsection{Results from Prior NSF Support}
+
+\subsubsection{Award N (\dol{123456}, 2/2019--1/2022) ``REU: Title'' (Lastname, Senior Personnel)}
+
+\paragraph{Intellectual Merit}
+
+Dr. Lastname is part of an expert group of faculty members who mentor REU participants in certain topics, by helping students to
+\begin{enumerate*}[label=(\arabic*), itemjoin={{; }}, itemjoin*={{; and }}]
+\item conceive, design, implement, and assess research projects in this area
+\item learn diverse different toolsets in domains such as example 1, example 2, and example 3.
+\end{enumerate*}
+
+\paragraph{Broader Impacts}
+Dr. Lastname's portion of the REU provided a research experience to 5 undergraduate students, including 2 female students.
+
+\paragraph{Publications}
+To date, this effort has resulted in 4 published papers \cite{paudel2019a,paudel2019b,paudel2018,mookiah2017}, with undergraduate and graduate students as first two authors.
+
+\renewcommand{\bibname}{References Cited}
+\printbibliography[heading=bibnumbered]
+
+\end{document}
