@@ -1,6 +1,6 @@
 # nsf-proposal: Basic LaTeX2e documentclass for NSF proposals
 
-Mike Renfro (GitHub: @mikerenfro)
+Mike Renfro (GitHub/Twitter: @mikerenfro)
 
 ![Sample Project Description page](nsf-demo-sample-description.png)
 
