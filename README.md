@@ -48,6 +48,6 @@ Example files include:
 
 The PDFs can be uploaded to [research.gov](https://research.gov/) on a test
 project, and they shouldn't throw any warnings as provided.
-Larger font sizes may trigger hyphenation problems for some words, so be sure
-to add hyphenation as necessary (already done for the `hurt2021` reference in
-nsf-demo.bib).
+Larger font sizes may trigger hyphenation problems for some words and drive
+some lines into the right margin, so be sure to add hyphenation as necessary
+(already done for the `hurt2021` reference in nsf-demo.bib).
