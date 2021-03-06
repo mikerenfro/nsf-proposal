@@ -22,7 +22,7 @@ It loads the following packages on its own:
 
 - enumitem (including inline lists)
 - booktabs (with a reduced value for `\tabcolsep`)
-- array (including a ragged right paragraph column type)
+- array (including a ragged right paragraph column type `P`)
 - multicol
 - siunitx (including binary units)
 - graphicx
