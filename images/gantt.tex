@@ -1,0 +1,31 @@
+\documentclass{standalone}
+\usepackage{pgfgantt}
+\usepgflibrary{patterns}
+\begin{document}
+\definecolor{techpurple}{RGB}{79,41,132}
+\newganttchartelement{responsibility}{responsibility/.style={fill=techpurple!25}}
+\newganttchartelement{lead}{lead/.style={fill=techpurple!100}}
+
+\begin{ganttchart}[
+hgrid, vgrid,
+expand chart=6.5in,
+canvas/.style={draw=none},
+y unit title=.2in,
+y unit chart=.2in,
+bar/.style={pattern=north east lines,draw=black},
+title/.style={draw=none},
+]{1}{13}
+\gantttitle{Project Year 1}{4} \gantttitle{Project Year 2}{4}
+\gantttitle[title/.style={draw=none}]{}{1} \gantttitle{Responsibility}{4} \\
+
+\gantttitlelist[title list options={var=\y, evaluate=\y as \x using "Q{\y}"}]{1,...,4}{1}
+\gantttitlelist[title list options={var=\y, evaluate=\y as \x using "Q{\y}"}]{1,...,4}{1}
+
+\gantttitle[title/.style={draw=none}]{}{1}
+\gantttitle{R}{1} \gantttitle{G}{1} \gantttitle{H}{1} \gantttitle{K}{1} \\
+\ganttbar{Meeting/planning (PIs)}{1}{8}                          \ganttlead{}{10}{10} \ganttresponsibility{}{11}{13} \\
+\ganttbar{Review final equipment specs and quotes}{1}{1}         \ganttlead{}{10}{10} \ganttresponsibility{}{11}{13} \\
+\ganttbar{Hardware ordered, delivered}{1}{2}                     \ganttlead{}{13}{13} \ganttresponsibility{}{10}{10} \\
+\ganttbar{Final report}{8}{8}                                    \ganttlead{}{10}{10} \ganttresponsibility{}{11}{13}
+\end{ganttchart}
+\end{document}

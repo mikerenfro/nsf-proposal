@@ -51,3 +51,11 @@ project, and they shouldn't throw any warnings as provided.
 Larger font sizes may trigger hyphenation problems for some words and drive
 some lines into the right margin, so be sure to add hyphenation as necessary
 (already done for the `hurt2021` reference in nsf-demo.bib).
+
+We also made a basic Gantt chart for one of the proposals. It uses
+[`pgfgantt`](https://ctan.org/pkg/pgfgantt), with just a bit of abuse to let
+us have additional columns for which team member bears primary responsibility
+or secondary responsibility. You'll find the source and output in the
+`images/` folder.
+
+![Sample Gantt chart](nsf-demo-sample-gantt.png)
