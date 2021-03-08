@@ -20,14 +20,14 @@ send me a pull request.
 
 It loads the following packages on its own:
 
-- enumitem (including inline lists)
-- booktabs (with a reduced value for `\tabcolsep`)
-- array (including a ragged right paragraph column type `P`)
-- multicol
-- siunitx (including binary units)
-- graphicx
-- hyperref
-- cleveref
+- [enumitem](https://ctan.org/pkg/enumitem) (including inline lists)
+- [booktabs](https://ctan.org/pkg/booktabs) (with a reduced value for `\tabcolsep`)
+- [array](https://ctan.org/pkg/array) (including a ragged right paragraph column type `P`)
+- [multicol](https://ctan.org/pkg/multicol)
+- [siunitx](https://ctan.org/pkg/siunitx) (including binary units)
+- [graphicx](https://ctan.org/pkg/graphicx)
+- [hyperref](https://ctan.org/pkg/hyperref)
+- [cleveref](https://ctan.org/pkg/cleveref)
 
 It disables most, if not all, of the hyperlinks in the main body of the
 proposal, leaving hyperlinks active in the references.
