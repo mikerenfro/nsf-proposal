@@ -28,18 +28,18 @@ Sample source files for a proposal can be found in:
 - nsf-demo.tex
 - nsf-demo.bib
 
-And the split PDF output from the sample document can be found in three
-different font sizes in:
+The split PDF output from the sample document can be found in three
+different font sizes in the `sample-output/` folder:
 
-- [nsf-demo-10pt-summary.pdf](sample-output/nsf-demo-10pt-summary.pdf)
-- [nsf-demo-10pt-description.pdf](sample-output/nsf-demo-10pt-description.pdf)
-- [nsf-demo-10pt-references.pdf](sample-output/nsf-demo-10pt-references.pdf)
-- [nsf-demo-11pt-summary.pdf](sample-output/nsf-demo-11pt-summary.pdf)
-- [nsf-demo-11pt-description.pdf](sample-output/nsf-demo-11pt-description.pdf)
-- [nsf-demo-11pt-references.pdf](sample-output/nsf-demo-11pt-references.pdf)
-- [nsf-demo-12pt-summary.pdf](sample-output/nsf-demo-12pt-summary.pdf)
-- [nsf-demo-12pt-description.pdf](sample-output/nsf-demo-12pt-description.pdf)
-- [nsf-demo-12pt-references.pdf](sample-output/nsf-demo-12pt-references.pdf)
+- 10 pt: [summary](sample-output/nsf-demo-10pt-summary.pdf),
+  [description](sample-output/nsf-demo-10pt-description.pdf),
+  [references](sample-output/nsf-demo-10pt-references.pdf)
+- 11 pt: [summary](sample-output/nsf-demo-11pt-summary.pdf),
+  [description](sample-output/nsf-demo-11pt-description.pdf),
+  [references](sample-output/nsf-demo-11pt-references.pdf)
+- 12 pt: [summary](sample-output/nsf-demo-12pt-summary.pdf),
+  [description](sample-output/nsf-demo-12pt-description.pdf),
+  [references](sample-output/nsf-demo-12pt-references.pdf)
 
 These PDFs can be uploaded to [research.gov](https://research.gov/) on a test
 project, and they shouldn't throw any warnings as provided.
