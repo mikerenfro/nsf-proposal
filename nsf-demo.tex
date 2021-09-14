@@ -1,8 +1,32 @@
 % !TEX TS-program = pdflatexmk
-\documentclass[12pt]{nsf-proposal}
+\documentclass[10pt]{nsf-proposal}
 
+% Compact lists as much as possible, make lists inside paragraphs easier.
+\usepackage[inline]{enumitem}
+\setlist{nosep}
+
+% Tables
+\usepackage{booktabs}
+\setlength{\tabcolsep}{0.3em} % More compact tables by default
+\usepackage{array}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}} % Allow ragged right paragraph columns
+\usepackage{multicol}
+
+% Units (for science drivers and performance measurements)
+\usepackage[group-separator={,},
+  binary-units=true,
+  per-mode=symbol,
+  detect-weight=true,
+  detect-family=true]{siunitx}
 \newcommand{\dol}[2][]{\SI{#2}[\$]{#1}}
 % use as \dol[\mega\relax]{1} for $1M, \dol{123} for $123.
+
+% Graphics
+\usepackage{graphicx}
+
+% Better cross-references
+\usepackage{cleveref}
+
 \usepackage[sorting=none,sortcites=true,citestyle=numeric-comp]{biblatex}
 \usepackage{pifont,xcolor} % for project needs table
 \setlength\bibitemsep{\baselineskip}

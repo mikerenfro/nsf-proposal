@@ -61,35 +61,13 @@
 \setaftersubsecskip{0.25\baselineskip}
 \setsubsecheadstyle{\normalfont\bfseries}
 
-% Unnumbered subsubsections, some whitespace before, inline bold title,
-% whitespace after
+% Unnumbered subsubsections and paragraphs, some whitespace before, inline bold
+% title, whitespace after
 \setsecnumdepth{subsection}
 \setbeforesubsubsecskip{0.25\baselineskip}
 \setaftersubsubsecskip{-\baselineskip}
-
 \setbeforeparaskip{0.25\baselineskip}
 \setafterparaskip{-\baselineskip}
-
-% Compact lists as much as possible, make lists inside paragraphs easier.
-\RequirePackage[inline]{enumitem}
-\setlist{nosep}
-
-% Tables
-\RequirePackage{booktabs}
-\setlength{\tabcolsep}{0.3em} % More compact tables by default
-\RequirePackage{array}
-\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}} % Allow ragged right paragraph columns
-\RequirePackage{multicol}
-
-% Units (for science drivers and performance measurements)
-\RequirePackage[group-separator={,},
-  binary-units=true,
-  per-mode=symbol,
-  detect-weight=true,
-  detect-family=true]{siunitx}
-
-% Graphics
-\RequirePackage{graphicx}
 
 % Number figures and tables continuously, not by chapter
 \counterwithout{table}{chapter}
@@ -101,8 +79,6 @@
   hyperfootnotes=false,
   hyperindex=false,
   pageanchor=false]{hyperref}
-
-\RequirePackage{cleveref}
 
 % How to turn on/off certain types (e.g. citation, url, file) of hyperref
 % links? https://tex.stackexchange.com/a/117676
