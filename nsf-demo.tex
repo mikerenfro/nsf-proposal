@@ -4,6 +4,7 @@
 \newcommand{\dol}[2][]{\SI{#2}[\$]{#1}}
 % use as \dol[\mega\relax]{1} for $1M, \dol{123} for $123.
 \usepackage[sorting=none,sortcites=true,citestyle=numeric-comp]{biblatex}
+\usepackage{pifont,xcolor} % for project needs table
 \setlength\bibitemsep{\baselineskip}
 \addbibresource{nsf-demo.bib}
 \begin{document}
@@ -51,6 +52,44 @@ Department 1 & Faculty 1 & Materials science & NSF \\
 Department 2 & Faculty 3 & Fundamental science & NSF \\ \bottomrule
 \end{tabular}
 \end{table}
+
+\newcommand{\mc}[2]{\multicolumn{#1}{c}{#2}} % Multicolumn, centered
+\newcommand{\rb}[1]{\rotatebox{90}{#1}} % Rotated
+\newcommand{\mcr}[2]{\mc{#1}{\rb{#2}}} % Multicolumn, centered, rotated
+\newcommand{\mi}[1]{{\color{blue}\textbf{#1}}} % Multi-institutional
+\newcommand{\ur}[1]{{\color{red}\textbf{#1}}} % Under-represented
+\newcommand{\cmark}{\ding{52}}
+\begin{table}[hbtp]
+\caption{Summary of science drivers' communities, attributes, solutions from proposed upgrades}
+\label{tab:science_drivers}
+%\todo[inline]{Consider grouping power theft under smart grid, CFD and robotics under AI/ML}
+\centering
+
+\begin{tabular}{ll ccc l rr}
+\toprule
+& & \mc{3}{Needs} & & \mc{2}{People\footnotemark} \\
+\cmidrule{3-5} \cmidrule{7-8}
+\multicolumn{2}{l}{\textbf{Field of Study:} Driver} & \mcr{1}{CPUs} & \mcr{1}{GPUs} & \mcr{1}{Infiniband} & \mc{1}{Representative software used} & \multicolumn{1}{r}{\rotatebox{90}{Faculty}} & \multicolumn{1}{r}{\rotatebox{90}{Students}} \\
+\midrule
+
+\multicolumn{2}{l}{\textbf{Field 1:}} \\
+&Project 1 & \cmark & \cmark & \cmark & Item 1, Item 2, Item 3 & 2      & \ur{3} \\
+&Project 2 & \cmark & \cmark & \cmark & Item 4, Item 5, Item 6 & \mi{6} & \ur{3}  \\ 
+&Project 3 & \cmark & \cmark & \cmark & Item 7, Item 8, Item 9 & 2      & \ur{10} \\
+\addlinespace
+
+\multicolumn{2}{l}{\textbf{Field 2:}} \\
+&Project 4 &        & \cmark &        & Item 4, Item 10, Item 11 & 1      & 1 \\
+&Project 5 & \cmark & \cmark & \cmark & Item 12, Item 13, Item 4 & \mi{3} & 6 \\
+\bottomrule
+\end{tabular}
+
+\begin{minipage}{\textwidth}
+\addtocounter{footnote}{-1}\footnotemark~\mi{Bold blue} faculty count indicates multi-institutional project,
+\ur{bold red} student count indicates inclusion of under-represented groups.
+\end{minipage}
+\end{table}
+
 
 This section details a selection of research projects.
 
