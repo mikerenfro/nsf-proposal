@@ -34,14 +34,14 @@
 \DeclareOption{palatino}{
   \setvalue{\nsfproposalfont}{palatino}
 }
-\DeclareOption{palatino-linotype}{
-  % Palatino Linotype can only work with LuaTeX or XeTeX
-  \iftutex
-    \setvalue{\nsfproposalfont}{palatino-linotype}%
-  \else
-    \ClassError{nsf-proposal}{option palatino-linotype requires LuaLaTeX or XeLaTeX}%
-  \fi
-}
+%\DeclareOption{palatino-linotype}{
+%  % Palatino Linotype can only work with LuaTeX or XeTeX
+%  \iftutex
+%    \setvalue{\nsfproposalfont}{palatino-linotype}%
+%  \else
+%    \ClassError{nsf-proposal}{option palatino-linotype requires LuaLaTeX or XeLaTeX}%
+%  \fi
+%}
 \DeclareOption{times-new-roman}{
   % Times New Roman can only work with LuaTeX or XeTeX
   \iftutex
@@ -68,7 +68,7 @@
     {courier-new}{}%
     {helvetica}{}%
     {palatino}{}%
-    {palatino-linotype}{}%
+%    {palatino-linotype}{}%
   }[\ClassError{nsf-proposal}{base font too small (10pt) for selected font \nsfproposalfont}]
 }
 
@@ -81,8 +81,8 @@
   {arial}{\RequirePackage{fontspec} \setmainfont{Arial} \RequirePackage{sansmath}}%
   {courier-new}{\RequirePackage{fontspec} \setmainfont{Courier New}}%
   {helvetica}{\RequirePackage[scaled]{helvet} \RequirePackage{sansmath} \renewcommand{\familydefault}{\sfdefault}}%
-  {palatino}{\iftutex \RequirePackage{fontspec} \setmainfont{Palatino} \else \usepackage{mathpazo} \fi}%
-  {palatino-linotype}{\RequirePackage{fontspec} \setmainfont{Palatino Linotype}}%
+  {palatino}{\iftutex \RequirePackage{fontspec} \setmainfont{Palatino} \else \RequirePackage{mathpazo} \fi}%
+%  {palatino-linotype}{\RequirePackage{fontspec} \setmainfont{Palatino Linotype} \RequirePackage{newpxmath}}%
   {times-new-roman}{\RequirePackage{fontspec} \setmainfont{Times New Roman}}%
 }
 
