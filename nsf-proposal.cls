@@ -1,11 +1,90 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nsf-proposal}[2021/03/05 memoir class for NSF proposals]
+\ProvidesClass{nsf-proposal}[2024/04/18 memoir class for NSF proposals]
+\RequirePackage{xstring} % for \IfEqCase and \IfEq
+\RequirePackage{iftex} % to detect TeX engine
+
+\newcommand{\setvalue}[2]{
+    \ifdefined #1
+        \renewcommand{#1}{#2}
+    \else
+        \newcommand{#1}{#2}
+    \fi
+}
+\setvalue{\nsfproposalfont}{cm}
+
+\DeclareOption{arial}{
+  % Arial can only work with LuaTeX or XeTeX
+  \iftutex
+    \setvalue{\nsfproposalfont}{arial}%
+  \else
+    \ClassError{nsf-proposal}{option arial requires LuaLaTeX or XeLaTeX}%
+  \fi
+}
+\DeclareOption{courier-new}{
+  % Courier New can only work with LuaTeX or XeTeX
+  \iftutex
+    \setvalue{\nsfproposalfont}{courier-new}%
+  \else
+    \ClassError{nsf-proposal}{option courier-new requires LuaLaTeX or XeLaTeX}%
+  \fi
+}
+\DeclareOption{helvetica}{
+  \setvalue{\nsfproposalfont}{helvetica}
+}
+\DeclareOption{palatino}{
+  \setvalue{\nsfproposalfont}{palatino}
+}
+\DeclareOption{palatino-linotype}{
+  % Palatino Linotype can only work with LuaTeX or XeTeX
+  \iftutex
+    \setvalue{\nsfproposalfont}{palatino-linotype}%
+  \else
+    \ClassError{nsf-proposal}{option palatino-linotype requires LuaLaTeX or XeLaTeX}%
+  \fi
+}
+\DeclareOption{times-new-roman}{
+  % Times New Roman can only work with LuaTeX or XeTeX
+  \iftutex
+    \setvalue{\nsfproposalfont}{times-new-roman}%
+  \else
+    \ClassError{nsf-proposal}{option times-new-roman requires LuaLaTeX or XeLaTeX}
+  \fi
+}
 \DeclareOption{9pt}{
   \ClassError{nsf-proposal}{base font too small (<10pt)}
 }
+\DeclareOption{10pt}{
+  % if 10pt, can only be:
+  % - Arial/Helvetica/Palatino,
+  % - Palatino Linotype, or
+  % - Courier New
+  %
+  % https://new.nsf.gov/policies/pappg/23-1/ch-2-proposal-preparation#2C2
+  % https://new.nsf.gov/policies/pappg/23-1/ch-2-proposal-preparation#_ftn6
+  % https://new.nsf.gov/policies/pappg/24-1/ch-2-proposal-preparation#ch2C2
+  % https://new.nsf.gov/policies/pappg/24-1/ch-2-proposal-preparation#ftn7
+  \IfEqCase{\nsfproposalfont}{%
+    {arial}{}%
+    {courier-new}{}%
+    {helvetica}{}%
+    {palatino}{}%
+    {palatino-linotype}{}%
+  }[\ClassError{nsf-proposal}{base font too small (10pt) for selected font \nsfproposalfont}]
+}
+
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
 \ProcessOptions
 \LoadClass[openany]{memoir}
+
+% All the font setup we can't do while processing options
+\IfEqCase{\nsfproposalfont}{%
+  {arial}{\RequirePackage{fontspec} \setmainfont{Arial} \RequirePackage{sansmath}}%
+  {courier-new}{\RequirePackage{fontspec} \setmainfont{Courier New}}%
+  {helvetica}{\RequirePackage[scaled]{helvet} \RequirePackage{sansmath} \renewcommand{\familydefault}{\sfdefault}}%
+  {palatino}{\iftutex \RequirePackage{fontspec} \setmainfont{Palatino} \else \usepackage{mathpazo} \fi}%
+  {palatino-linotype}{\RequirePackage{fontspec} \setmainfont{Palatino Linotype}}%
+  {times-new-roman}{\RequirePackage{fontspec} \setmainfont{Times New Roman}}%
+}
 
 % Page setup
 \setstocksize{11in}{8.5in}
