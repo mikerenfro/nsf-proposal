@@ -50,6 +50,19 @@
     \ClassError{nsf-proposal}{option times-new-roman requires LuaLaTeX or XeLaTeX}
   \fi
 }
+
+\newif\ifusetg
+\usetgfalse % don't use TeX Gyre by default
+
+\DeclareOption{tg}{%
+  % Use TeX Gyre font variants
+  \ifluatex%
+    \usetgtrue%
+  \else%
+    \ClassError{font-tester}{option tg requires LuaLaTeX}%
+  \fi%
+}
+
 \DeclareOption{9pt}{
   \ClassError{nsf-proposal}{base font too small (<10pt)}
 }
@@ -78,12 +91,68 @@
 
 % All the font setup we can't do while processing options
 \IfEqCase{\nsfproposalfont}{%
-  {arial}{\RequirePackage{fontspec} \setmainfont{Arial} \RequirePackage{sansmath}}%
-  {courier-new}{\RequirePackage{fontspec} \setmainfont{Courier New}}%
-  {helvetica}{\RequirePackage[scaled]{helvet} \RequirePackage{sansmath} \renewcommand{\familydefault}{\sfdefault}}%
-  {palatino}{\iftutex \RequirePackage{fontspec} \setmainfont{Palatino} \else \RequirePackage{mathpazo} \fi}%
-%  {palatino-linotype}{\RequirePackage{fontspec} \setmainfont{Palatino Linotype} \RequirePackage{newpxmath}}%
-  {times-new-roman}{\RequirePackage{fontspec} \setmainfont{Times New Roman}}%
+  {arial}{%
+    \ifusetg%
+      \ClassWarning{font-tester}{option tg has no effect with option arial}%
+    \fi%
+    \RequirePackage{fontspec}%
+    \setmainfont{Arial}%
+    \RequirePackage{sansmath}%
+  }%
+  {cm}{%
+    \ifusetg%
+      \ClassWarning{font-tester}{option tg has no effect with (possibly default) option cm}%
+    \fi%
+  }%
+  {courier-new}{%
+    \ifusetg%
+      \RequirePackage{fontspec}%
+      \setmainfont[Ligatures=NoCommon]{Tex Gyre Cursor}% for lualatex, at least on Mac
+    \else%
+      \RequirePackage{fontspec}%
+      \setmainfont{Courier New}% for lualatex and xelatex, at least on Mac
+    \fi%
+  }%
+  {helvetica}{%
+    \ifusetg%
+      \RequirePackage{fontspec}%
+      \setmainfont{TeX Gyre Heros}% for lualatex, why not for xelatex?
+    \else%
+      \iftutex%
+        \RequirePackage{fontspec}%
+        \setmainfont{Helvetica}% for lualatex and xelatex, at least on Mac
+      \else%
+        \RequirePackage[scaled]{helvet}%
+        \RequirePackage{sansmath}%
+        \renewcommand{\familydefault}{\sfdefault}% for pdflatex, ends up with Nimbus Sans L
+      \fi%
+    \fi%
+  }%
+  {palatino}{%
+    \ifusetg%
+      \RequirePackage{fontspec}%
+      \setmainfont{TeX Gyre Pagella}% for lualatex, why not for xelatex?
+    \else%
+      \iftutex%
+        \RequirePackage{fontspec}%
+        \setmainfont{Palatino}%
+      \else%
+        \RequirePackage{mathpazo}%
+      \fi%
+    \fi%
+  }%
+  %{palatino-linotype}{%
+    %\RequirePackage{fontspec} \setmainfont{Palatino Linotype}%
+  %}%
+  {times-new-roman}{%
+    \ifusetg%
+      \RequirePackage{fontspec}%
+      \setmainfont{TeX Gyre Termes}%
+    \else%
+      \RequirePackage{fontspec}%
+      \setmainfont{Times New Roman}%
+    \fi%
+  }%
 }
 
 % Page setup
