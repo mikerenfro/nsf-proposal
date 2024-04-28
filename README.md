@@ -2,15 +2,42 @@
 
 Mike Renfro (GitHub/Twitter: @mikerenfro)
 
-![Sample Project Description page](sample-output/nsf-demo-sample-description.png)
+![Sample Project Summary page](sample-output/summary-palatino-12.png)
+
+![Sample Project Description page](sample-output/description-palatino-12.png)
+
+![Sample Project References page](sample-output/references-palatino-12.png)
 
 This needs better documentation, but for now, this documentclass lets you make
 relatively compact NSF proposals with a minimum of fiddly ad hoc formatting
 inside the main document.
-We've used this documentclass for both an MRI and a CC* proposal this year.
+We've used this documentclass for both an MRI and a CC* proposal in 2021, and
+it's just been recently been verified for the 2024 PAPPG standards (as far as
+I know).
+
+## TL;DR
+
+`\documentclass[fontsize,basefont]` where `fontsize` is any point size greater
+than `9pt` supported by [`memoir`](https://ctan.org/pkg/memoir) (untested for
+ sizes larger than `12pt`), and `basefont` is any of:
+
+ - `arial`
+ - `cm` (the default)
+ - `courier-new`
+ - `helvetica`
+ - `palatino`
+ - `times-new-roman`
+
+Now write the rest of your proposal, using `\chapter` on down to `\paragraph`
+to break things up. You'll want to use the starred versions of these on the
+one-page project summary. See `nsf-demo.tex` for an example.
+
+## More Details
 
 It uses the memoir class as its base, and supports proposals with a base font
-size of 10 points and higher.
+size of 10 points and higher (for the `arial`, `courier-new`, `helvetica`, and
+`palatino` options), or 11 points and higher (for the `cm` and `times-new-roman`
+options).
 It adds a small amount of whitespace around lines at 10pt, since NSF's PDF
 readers will often flag a 10pt document as having more than 6 lines per inch.
 We also noticed that LuaTeX creates a slightly different line height than
@@ -21,8 +48,19 @@ send me a pull request.
 It disables most, if not all, of the hyperlinks in the main body of the
 proposal, leaving hyperlinks active in the references.
 
-The documentclass code is only about 100 lines, including whitespace and
-comments, so it should be relatively readable.
+The documentclass code is under 180 lines, including whitespace and
+comments, so it should be relatively readable (half of that is handling
+different base fonts).
+The documentclass depends on the following packages:
+
+- fontspec (if using LuaLaTeX or XeLaTeX)
+- helvet (for option `helvetica`)
+- hyperref
+- iftex
+- mathpazo (for option `palatino`)
+- sansmath (for option `arial` and `helvetica`)
+- xstring
+
 Sample source files for a proposal can be found in:
 
 - nsf-demo.tex
@@ -44,17 +82,22 @@ different font sizes in the `sample-output/` folder:
 These PDFs can be uploaded to [research.gov](https://research.gov/) on a test
 project, and they shouldn't throw any warnings as provided.
 
-The sample document adds the following packages not specifically required by
-NSF, but really handy for these sorts of proposals:
+The sample document `nsf-demo.tex` adds the following packages not
+specifically required by NSF, but really handy for these sorts ofproposals:
 
-- [enumitem](https://ctan.org/pkg/enumitem) (including inline lists)
-- [booktabs](https://ctan.org/pkg/booktabs) (with a reduced value for `\tabcolsep`)
 - [array](https://ctan.org/pkg/array) (including a ragged right paragraph column type `P`)
-- [multicol](https://ctan.org/pkg/multicol)
-- [siunitx](https://ctan.org/pkg/siunitx) (including binary units)
-- [graphicx](https://ctan.org/pkg/graphicx)
-- [hyperref](https://ctan.org/pkg/hyperref)
+- [biblatex](https://ctan.org/pkg/biblatex)
+- [booktabs](https://ctan.org/pkg/booktabs) (with a reduced value for `\tabcolsep`)
+- [calc](https://ctan.org/pkg/calc)
 - [cleveref](https://ctan.org/pkg/cleveref)
+- [enumitem](https://ctan.org/pkg/enumitem) (including inline lists)
+- [graphicx](https://ctan.org/pkg/graphicx)
+- [metalogo](https://ctan.org/pkg/metalogo)
+- [multicol](https://ctan.org/pkg/multicol)
+- [pifont](https://ctan.org/pkg/pifont)
+- [siunitx](https://ctan.org/pkg/siunitx) (including binary units)
+- [xcolor](https://ctan.org/pkg/xcolor)
+- [xurl](https://ctan.org/pkg/xurl)
 
 As shown in the sample document, you can use a `\chapter*` and `\section*`
 for the 1-page Project Summary, `\chapter`, `\section`, `\subsection`,
