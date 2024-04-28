@@ -34,14 +34,14 @@
 \DeclareOption{palatino}{
   \setvalue{\nsfproposalfont}{palatino}
 }
-%\DeclareOption{palatino-linotype}{
-%  % Palatino Linotype can only work with LuaTeX or XeTeX
-%  \iftutex
-%    \setvalue{\nsfproposalfont}{palatino-linotype}%
-%  \else
-%    \ClassError{nsf-proposal}{option palatino-linotype requires LuaLaTeX or XeLaTeX}%
-%  \fi
-%}
+\DeclareOption{palatino-linotype}{
+ % Palatino Linotype can only work with LuaTeX or XeTeX
+ \iftutex
+   \setvalue{\nsfproposalfont}{palatino-linotype}%
+ \else
+   \ClassError{nsf-proposal}{option palatino-linotype requires LuaLaTeX or XeLaTeX}%
+ \fi
+}
 \DeclareOption{times-new-roman}{
   % Times New Roman can only work with LuaTeX or XeTeX
   \iftutex
@@ -59,7 +59,7 @@
   \ifluatex%
     \usetgtrue%
   \else%
-    \ClassError{font-tester}{option tg requires LuaLaTeX}%
+    \ClassError{nsf-proposal}{option tg requires LuaLaTeX}%
   \fi%
 }
 
@@ -81,7 +81,7 @@
     {courier-new}{}%
     {helvetica}{}%
     {palatino}{}%
-%    {palatino-linotype}{}%
+    {palatino-linotype}{}%
   }[\ClassError{nsf-proposal}{base font too small (10pt) for selected font \nsfproposalfont}]
 }
 
@@ -93,7 +93,7 @@
 \IfEqCase{\nsfproposalfont}{%
   {arial}{%
     \ifusetg%
-      \ClassWarning{font-tester}{option tg has no effect with option arial}%
+      \ClassWarning{nsf-proposal}{option tg has no effect with option arial}%
     \fi%
     \RequirePackage{fontspec}%
     \setmainfont{Arial}%
@@ -101,7 +101,7 @@
   }%
   {cm}{%
     \ifusetg%
-      \ClassWarning{font-tester}{option tg has no effect with (possibly default) option cm}%
+      \ClassWarning{nsf-proposal}{option tg has no effect with (possibly default) option cm}%
     \fi%
   }%
   {courier-new}{%
@@ -141,9 +141,14 @@
       \fi%
     \fi%
   }%
-  %{palatino-linotype}{%
-    %\RequirePackage{fontspec} \setmainfont{Palatino Linotype}%
-  %}%
+  {palatino-linotype}{%
+    \ifusetg%
+      \ClassWarning{nsf-proposal}{option tg has no effect with option palatino-linotype}%
+    \fi
+    \RequirePackage{mathpazo}
+    \RequirePackage{fontspec}
+    \setmainfont{Palatino Linotype}%
+  }%
   {times-new-roman}{%
     \ifusetg%
       \RequirePackage{fontspec}%
