@@ -17,9 +17,8 @@ I know).
 
 ## TL;DR
 
-`\documentclass[fontsize,basefont]` where `fontsize` is any point size greater
-than `9pt` supported by [`memoir`](https://ctan.org/pkg/memoir) (untested for
- sizes larger than `12pt`), and `basefont` is any of:
+`\documentclass[fontsize,basefont]` where `fontsize` is `10pt`, `11pt`, or
+`12pt`, and `basefont` is any of:
 
  - `arial`
  - `cm` (the default)
@@ -28,29 +27,33 @@ than `9pt` supported by [`memoir`](https://ctan.org/pkg/memoir) (untested for
  - `palatino`
  - `times-new-roman`
 
+Optionally, add the `tg` class option to use the TeX Gyre equivalents to Courier
+New, Helvetica, Palatino, or Times New Roman (seems to require LuaLaTeX rather
+than XeLaTeX for full functionality).
+
 Now write the rest of your proposal, using `\chapter` on down to `\paragraph`
 to break things up. You'll want to use the starred versions of these on the
 one-page project summary. See `nsf-demo.tex` for an example.
 
 ## More Details
 
-It uses the memoir class as its base, and supports proposals with a base font
-size of 10 points and higher (for the `arial`, `courier-new`, `helvetica`, and
-`palatino` options), or 11 points and higher (for the `cm` and `times-new-roman`
-options).
+This documentclass uses the memoir class as its base, and supports proposals
+with a base font size of 10 points and higher (for the `arial`, `courier-new`,
+`helvetica`, and `palatino` options), or 11 points and higher (for the `cm`
+and `times-new-roman` options).
 It adds a small amount of whitespace around lines at 10pt, since NSF's PDF
 readers will often flag a 10pt document as having more than 6 lines per inch.
-We also noticed that LuaTeX creates a slightly different line height than
-pdfTeX, so if you're using Overleaf, you may want to set the default engine
+We also noticed that LuaLaTeX creates a slightly different line height than
+pdfLaTeX, so if you're using Overleaf, you may want to set the default engine
 to pdfLaTeX, or if you find a better solution that works with both engines,
 send me a pull request.
 
 It disables most, if not all, of the hyperlinks in the main body of the
 proposal, leaving hyperlinks active in the references.
 
-The documentclass code is under 180 lines, including whitespace and
-comments, so it should be relatively readable (half of that is handling
-different base fonts).
+The documentclass code is around 250 lines, including whitespace and
+comments, so it should be relatively readable (over half of that is
+handling different base fonts).
 The documentclass depends on the following packages:
 
 - fontspec (if using LuaLaTeX or XeLaTeX)
@@ -83,7 +86,7 @@ These PDFs can be uploaded to [research.gov](https://research.gov/) on a test
 project, and they shouldn't throw any warnings as provided.
 
 The sample document `nsf-demo.tex` adds the following packages not
-specifically required by NSF, but really handy for these sorts ofproposals:
+specifically required by NSF, but really handy for these sorts of proposals:
 
 - [array](https://ctan.org/pkg/array) (including a ragged right paragraph column type `P`)
 - [biblatex](https://ctan.org/pkg/biblatex)
