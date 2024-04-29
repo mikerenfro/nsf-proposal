@@ -25,6 +25,7 @@ I know).
  - `courier-new`
  - `helvetica`
  - `palatino`
+ - `palatino-linotype` (may only work by default on Windows)
  - `times-new-roman`
 
 Optionally, add the `tg` class option to use the TeX Gyre equivalents to Courier
@@ -60,7 +61,7 @@ The documentclass depends on the following packages:
 - helvet (for option `helvetica`)
 - hyperref
 - iftex
-- mathpazo (for option `palatino`)
+- mathpazo (for option `palatino` and `palatino-linotype`)
 - sansmath (for option `arial` and `helvetica`)
 - xstring
 
