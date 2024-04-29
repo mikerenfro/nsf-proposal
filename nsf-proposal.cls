@@ -96,8 +96,14 @@
       \ClassWarning{nsf-proposal}{option tg has no effect with option arial}%
     \fi%
     \RequirePackage{fontspec}%
+    \RequirePackage{unicode-math}
     \setmainfont{Arial}%
-    \RequirePackage{sansmath}%
+    \setsansfont{Arial}%
+    \setmathfont{latinmodern-math.otf}%
+    \setmathfont[range=up]{Arial}%
+    \setmathfont[range=it]{Arial Italic}%
+    \setmathfont[range=bfup]{Arial Bold}%
+    \setmathfont[range=bfit]{Arial Bold Italic}%
   }%
   {cm}{%
     \ifusetg%
