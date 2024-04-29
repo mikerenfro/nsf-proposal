@@ -116,8 +116,15 @@
       \setmainfont[Ligatures=NoCommon]{Tex Gyre Cursor}% for lualatex, at least on Mac
     \else%
       \RequirePackage{fontspec}%
-      \setmainfont{Courier New}% for lualatex and xelatex, at least on Mac
-    \fi%
+      \RequirePackage{unicode-math}
+      \setmainfont{Courier New}%
+      \setsansfont{Courier New}%
+      \setmathfont{latinmodern-math.otf}%
+      \setmathfont[range=up]{Courier New}%
+      \setmathfont[range=it]{Courier New Italic}%
+      \setmathfont[range=bfup]{Courier New Bold}%
+      \setmathfont[range=bfit]{Courier New Bold Italic}%
+      \fi%
   }%
   {helvetica}{%
     \ifusetg%
