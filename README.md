@@ -74,9 +74,11 @@ The split PDF output from the sample document can be found in all valid
 combinations of font faces, sizes, and LaTeX engines in the `sample-output/`
 folder:
 
+## Sample Output
+
 ### arial
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 | pdf |  N/A |  N/A |  N/A | 
 | pdfxe | [summary](sample-output/arial/arial-pdfxe-10pt-summary.pdf), [description](sample-output/arial/arial-pdfxe-10pt-description.pdf), [references](sample-output/arial/arial-pdfxe-10pt-references.pdf), [combined](sample-output/arial/arial-pdfxe-10pt.pdf) | [summary](sample-output/arial/arial-pdfxe-11pt-summary.pdf), [description](sample-output/arial/arial-pdfxe-11pt-description.pdf), [references](sample-output/arial/arial-pdfxe-11pt-references.pdf), [combined](sample-output/arial/arial-pdfxe-11pt.pdf) | [summary](sample-output/arial/arial-pdfxe-12pt-summary.pdf), [description](sample-output/arial/arial-pdfxe-12pt-description.pdf), [references](sample-output/arial/arial-pdfxe-12pt-references.pdf), [combined](sample-output/arial/arial-pdfxe-12pt.pdf) | 
@@ -84,7 +86,7 @@ folder:
 
 ### cm
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 | pdf |  N/A | [summary](sample-output/cm/cm-pdf-11pt-summary.pdf), [description](sample-output/cm/cm-pdf-11pt-description.pdf), [references](sample-output/cm/cm-pdf-11pt-references.pdf), [combined](sample-output/cm/cm-pdf-11pt.pdf) | [summary](sample-output/cm/cm-pdf-12pt-summary.pdf), [description](sample-output/cm/cm-pdf-12pt-description.pdf), [references](sample-output/cm/cm-pdf-12pt-references.pdf), [combined](sample-output/cm/cm-pdf-12pt.pdf) | 
 | pdfxe |  N/A | [summary](sample-output/cm/cm-pdfxe-11pt-summary.pdf), [description](sample-output/cm/cm-pdfxe-11pt-description.pdf), [references](sample-output/cm/cm-pdfxe-11pt-references.pdf), [combined](sample-output/cm/cm-pdfxe-11pt.pdf) | [summary](sample-output/cm/cm-pdfxe-12pt-summary.pdf), [description](sample-output/cm/cm-pdfxe-12pt-description.pdf), [references](sample-output/cm/cm-pdfxe-12pt-references.pdf), [combined](sample-output/cm/cm-pdfxe-12pt.pdf) | 
@@ -92,7 +94,7 @@ folder:
 
 ### courier-new
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 | pdf |  N/A |  N/A |  N/A | 
 | pdfxe | [summary](sample-output/courier-new/courier-new-pdfxe-10pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdfxe-10pt-description.pdf), [references](sample-output/courier-new/courier-new-pdfxe-10pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdfxe-10pt.pdf) | [summary](sample-output/courier-new/courier-new-pdfxe-11pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdfxe-11pt-description.pdf), [references](sample-output/courier-new/courier-new-pdfxe-11pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdfxe-11pt.pdf) | [summary](sample-output/courier-new/courier-new-pdfxe-12pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdfxe-12pt-description.pdf), [references](sample-output/courier-new/courier-new-pdfxe-12pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdfxe-12pt.pdf) | 
@@ -100,7 +102,7 @@ folder:
 
 ### courier-new (TeX Gyre Cursor)
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 | pdf |  N/A |  N/A |  N/A | 
 | pdfxe |  N/A |  N/A |  N/A | 
@@ -108,7 +110,7 @@ folder:
 
 ### helvetica
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 | pdf | [summary](sample-output/helvetica/helvetica-pdf-10pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdf-10pt-description.pdf), [references](sample-output/helvetica/helvetica-pdf-10pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdf-10pt.pdf) | [summary](sample-output/helvetica/helvetica-pdf-11pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdf-11pt-description.pdf), [references](sample-output/helvetica/helvetica-pdf-11pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdf-11pt.pdf) | [summary](sample-output/helvetica/helvetica-pdf-12pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdf-12pt-description.pdf), [references](sample-output/helvetica/helvetica-pdf-12pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdf-12pt.pdf) | 
 | pdfxe | [summary](sample-output/helvetica/helvetica-pdfxe-10pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdfxe-10pt-description.pdf), [references](sample-output/helvetica/helvetica-pdfxe-10pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdfxe-10pt.pdf) | [summary](sample-output/helvetica/helvetica-pdfxe-11pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdfxe-11pt-description.pdf), [references](sample-output/helvetica/helvetica-pdfxe-11pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdfxe-11pt.pdf) | [summary](sample-output/helvetica/helvetica-pdfxe-12pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdfxe-12pt-description.pdf), [references](sample-output/helvetica/helvetica-pdfxe-12pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdfxe-12pt.pdf) | 
@@ -116,7 +118,7 @@ folder:
 
 ### helvetica (TeX Gyre Heros)
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 | pdf |  N/A |  N/A |  N/A | 
 | pdfxe |  N/A |  N/A |  N/A | 
@@ -124,7 +126,7 @@ folder:
 
 ### palatino
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 | pdf | [summary](sample-output/palatino/palatino-pdf-10pt-summary.pdf), [description](sample-output/palatino/palatino-pdf-10pt-description.pdf), [references](sample-output/palatino/palatino-pdf-10pt-references.pdf), [combined](sample-output/palatino/palatino-pdf-10pt.pdf) | [summary](sample-output/palatino/palatino-pdf-11pt-summary.pdf), [description](sample-output/palatino/palatino-pdf-11pt-description.pdf), [references](sample-output/palatino/palatino-pdf-11pt-references.pdf), [combined](sample-output/palatino/palatino-pdf-11pt.pdf) | [summary](sample-output/palatino/palatino-pdf-12pt-summary.pdf), [description](sample-output/palatino/palatino-pdf-12pt-description.pdf), [references](sample-output/palatino/palatino-pdf-12pt-references.pdf), [combined](sample-output/palatino/palatino-pdf-12pt.pdf) | 
 | pdfxe | [summary](sample-output/palatino/palatino-pdfxe-10pt-summary.pdf), [description](sample-output/palatino/palatino-pdfxe-10pt-description.pdf), [references](sample-output/palatino/palatino-pdfxe-10pt-references.pdf), [combined](sample-output/palatino/palatino-pdfxe-10pt.pdf) | [summary](sample-output/palatino/palatino-pdfxe-11pt-summary.pdf), [description](sample-output/palatino/palatino-pdfxe-11pt-description.pdf), [references](sample-output/palatino/palatino-pdfxe-11pt-references.pdf), [combined](sample-output/palatino/palatino-pdfxe-11pt.pdf) | [summary](sample-output/palatino/palatino-pdfxe-12pt-summary.pdf), [description](sample-output/palatino/palatino-pdfxe-12pt-description.pdf), [references](sample-output/palatino/palatino-pdfxe-12pt-references.pdf), [combined](sample-output/palatino/palatino-pdfxe-12pt.pdf) | 
@@ -132,7 +134,7 @@ folder:
 
 ### palatino (TeX Gyre Pagella)
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 | pdf |  N/A |  N/A |  N/A | 
 | pdfxe |  N/A |  N/A |  N/A | 
@@ -140,7 +142,7 @@ folder:
 
 ### palatino-linotype
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 | pdf |  N/A |  N/A |  N/A | 
 | pdfxe |  N/A |  N/A |  N/A | 
@@ -148,7 +150,7 @@ folder:
 
 ### times-new-roman
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 | pdf |  N/A |  N/A |  N/A | 
 | pdfxe |  N/A | [summary](sample-output/times-new-roman/times-new-roman-pdfxe-11pt-summary.pdf), [description](sample-output/times-new-roman/times-new-roman-pdfxe-11pt-description.pdf), [references](sample-output/times-new-roman/times-new-roman-pdfxe-11pt-references.pdf), [combined](sample-output/times-new-roman/times-new-roman-pdfxe-11pt.pdf) | [summary](sample-output/times-new-roman/times-new-roman-pdfxe-12pt-summary.pdf), [description](sample-output/times-new-roman/times-new-roman-pdfxe-12pt-description.pdf), [references](sample-output/times-new-roman/times-new-roman-pdfxe-12pt-references.pdf), [combined](sample-output/times-new-roman/times-new-roman-pdfxe-12pt.pdf) | 
@@ -156,7 +158,7 @@ folder:
 
 ### times-new-roman (TeX Gyre Termes)
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 | pdf |  N/A |  N/A |  N/A | 
 | pdfxe |  N/A |  N/A |  N/A | 
