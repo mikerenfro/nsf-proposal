@@ -38,9 +38,9 @@ one-page project summary. See `nsf-demo.tex` for an example.
 
 ## More Details
 
-This documentclass uses the memoir class as its base, and supports proposals
+This documentclass uses the [memoir](https://ctan.org/pkg/memoir) class as its base, and supports proposals
 with a base font size of 10 points and higher (for the `arial`, `courier-new`,
-`helvetica`, and `palatino` options), or 11 points and higher (for the `cm`
+`helvetica`, `palatino`, and `palatino-linotype` options), or 11 points and higher (for the `cm`
 and `times-new-roman` options).
 It adds a small amount of whitespace around lines at 10pt, since NSF's PDF
 readers will often flag a 10pt document as having more than 6 lines per inch.
