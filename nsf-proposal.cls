@@ -165,10 +165,22 @@
   {times-new-roman}{%
     \ifusetg%
       \RequirePackage{fontspec}%
+      \RequirePackage{unicode-math}
       \setmainfont{TeX Gyre Termes}%
+      \setmathfont{latinmodern-math.otf}%
+      \setmathfont[range=up]{TeX Gyre Termes}%
+      \setmathfont[range=it]{TeX Gyre Termes Italic}%
+      \setmathfont[range=bfup]{TeX Gyre Termes Bold}%
+      \setmathfont[range=bfit]{TeX Gyre Termes Italic}%
     \else%
       \RequirePackage{fontspec}%
+      \RequirePackage{unicode-math}
       \setmainfont{Times New Roman}%
+      \setmathfont{latinmodern-math.otf}%
+      \setmathfont[range=up]{Times New Roman}%
+      \setmathfont[range=it]{Times New Roman Italic}%
+      \setmathfont[range=bfup]{Times New Roman Bold}%
+      \setmathfont[range=bfit]{Times New Roman Italic}%
     \fi%
   }%
 }
