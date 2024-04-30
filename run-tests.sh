@@ -64,7 +64,7 @@ for font in arial cm courier-new helvetica palatino palatino-linotype times-new-
         cat <<EOD
 ### ${font}${suffix}
 
-|          | 10 pt | 11 pt | 12 pt |
+|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
 EOD
         for engine in pdf pdfxe pdflua; do
