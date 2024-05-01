@@ -56,10 +56,10 @@
 
 \DeclareOption{tg}{%
   % Use TeX Gyre font variants
-  \ifluatex%
+  \iftutex%
     \usetgtrue%
   \else%
-    \ClassError{nsf-proposal}{option tg requires LuaLaTeX}%
+    \ClassError{nsf-proposal}{option tg requires LuaLaTeX or XeLaTeX}%
   \fi%
 }
 
@@ -113,7 +113,14 @@
   {courier-new}{%
     \ifusetg%
       \RequirePackage{fontspec}%
-      \setmainfont[Ligatures=NoCommon]{Tex Gyre Cursor}% for lualatex, at least on Mac
+      \setmainfont{texgyrecursor}[
+        Extension      = .otf,
+        UprightFont    = *-regular,
+        ItalicFont     = *-italic,
+        BoldFont       = *-bold,
+        BoldItalicFont = *-bolditalic,
+        Ligatures      = NoCommon,
+      ]%
     \else%
       \RequirePackage{fontspec}%
       \RequirePackage{unicode-math}
@@ -129,7 +136,13 @@
   {helvetica}{%
     \ifusetg%
       \RequirePackage{fontspec}%
-      \setmainfont{TeX Gyre Heros}% for lualatex, why not for xelatex?
+      \setmainfont{texgyreheros}[
+        Extension      = .otf,
+        UprightFont    = *-regular,
+        ItalicFont     = *-italic,
+        BoldFont       = *-bold,
+        BoldItalicFont = *-bolditalic,
+      ]%
     \else%
       \iftutex%
         \RequirePackage{fontspec}%
@@ -144,7 +157,13 @@
   {palatino}{%
     \ifusetg%
       \RequirePackage{fontspec}%
-      \setmainfont{TeX Gyre Pagella}% for lualatex, why not for xelatex?
+      \setmainfont{texgyrepagella}[
+        Extension      = .otf,
+        UprightFont    = *-regular,
+        ItalicFont     = *-italic,
+        BoldFont       = *-bold,
+        BoldItalicFont = *-bolditalic,
+      ]%
     \else%
       \iftutex%
         \RequirePackage{fontspec}%
@@ -166,12 +185,14 @@
     \ifusetg%
       \RequirePackage{fontspec}%
       \RequirePackage{unicode-math}
-      \setmainfont{TeX Gyre Termes}%
+      \setmainfont{texgyretermes}[
+        Extension      = .otf,
+        UprightFont    = *-regular,
+        ItalicFont     = *-italic,
+        BoldFont       = *-bold,
+        BoldItalicFont = *-bolditalic,
+      ]%
       \setmathfont{latinmodern-math.otf}%
-      \setmathfont[range=up]{TeX Gyre Termes}%
-      \setmathfont[range=it]{TeX Gyre Termes Italic}%
-      \setmathfont[range=bfup]{TeX Gyre Termes Bold}%
-      \setmathfont[range=bfit]{TeX Gyre Termes Italic}%
     \else%
       \RequirePackage{fontspec}%
       \RequirePackage{unicode-math}
