@@ -17,6 +17,7 @@ make_build_check_document() {
         echo "No output ${basefile}.pdf"
     fi
     latexmk -CA ${basefile} >& /dev/null
+    rm -f rm -f *.bbl *.run.xml
     rm -f ${basefile}.tex
     echo ""
 }
