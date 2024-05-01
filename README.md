@@ -51,9 +51,9 @@ send me a pull request.
 It disables most, if not all, of the hyperlinks in the main body of the
 proposal, leaving hyperlinks active in the references.
 
-The documentclass code is around 250 lines, including whitespace and
+The documentclass code is around 300 lines, including whitespace and
 comments, so it should be relatively readable (over half of that is
-handling different base fonts).
+for handling different base fonts and sizes).
 The documentclass depends on the following packages:
 
 - fontspec (if using LuaLaTeX or XeLaTeX)
