@@ -69,13 +69,19 @@ Sample source files for a proposal can be found in:
 - nsf-demo.tex
 - nsf-demo.bib
 
-The split PDF output from the sample document can be found in all valid
-combinations of font faces, sizes, and LaTeX engines in the `sample-output/`
-folder:
+### Sample Output
 
-## Sample Output
 
-### arial
+The following tables are grouped by base font, latex engine, and font size.
+The "summary", "description", and "references" PDFs represent the one-page
+summary, the <=15-page project description, and the bibliography for a sample
+NSF proposal. These PDFs can be uploaded to [research.gov](https://research.gov/)
+on a test project, and they shouldn't throw any warnings as provided.
+Any N/A entries represent either an impossible combination of font and engine
+(e.g., Arial and pdflatex), or an invalid combination of font and size per
+the NSF PAPPG (e.g., Computer Modern at 10 pt).
+
+#### arial
 
 |          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
@@ -83,7 +89,7 @@ folder:
 | pdfxe | [summary](sample-output/arial/arial-pdfxe-10pt-summary.pdf), [description](sample-output/arial/arial-pdfxe-10pt-description.pdf), [references](sample-output/arial/arial-pdfxe-10pt-references.pdf), [combined](sample-output/arial/arial-pdfxe-10pt.pdf) | [summary](sample-output/arial/arial-pdfxe-11pt-summary.pdf), [description](sample-output/arial/arial-pdfxe-11pt-description.pdf), [references](sample-output/arial/arial-pdfxe-11pt-references.pdf), [combined](sample-output/arial/arial-pdfxe-11pt.pdf) | [summary](sample-output/arial/arial-pdfxe-12pt-summary.pdf), [description](sample-output/arial/arial-pdfxe-12pt-description.pdf), [references](sample-output/arial/arial-pdfxe-12pt-references.pdf), [combined](sample-output/arial/arial-pdfxe-12pt.pdf) | 
 | pdflua | [summary](sample-output/arial/arial-pdflua-10pt-summary.pdf), [description](sample-output/arial/arial-pdflua-10pt-description.pdf), [references](sample-output/arial/arial-pdflua-10pt-references.pdf), [combined](sample-output/arial/arial-pdflua-10pt.pdf) | [summary](sample-output/arial/arial-pdflua-11pt-summary.pdf), [description](sample-output/arial/arial-pdflua-11pt-description.pdf), [references](sample-output/arial/arial-pdflua-11pt-references.pdf), [combined](sample-output/arial/arial-pdflua-11pt.pdf) | [summary](sample-output/arial/arial-pdflua-12pt-summary.pdf), [description](sample-output/arial/arial-pdflua-12pt-description.pdf), [references](sample-output/arial/arial-pdflua-12pt-references.pdf), [combined](sample-output/arial/arial-pdflua-12pt.pdf) | 
 
-### cm
+#### cm
 
 |          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
@@ -91,7 +97,7 @@ folder:
 | pdfxe |  N/A | [summary](sample-output/cm/cm-pdfxe-11pt-summary.pdf), [description](sample-output/cm/cm-pdfxe-11pt-description.pdf), [references](sample-output/cm/cm-pdfxe-11pt-references.pdf), [combined](sample-output/cm/cm-pdfxe-11pt.pdf) | [summary](sample-output/cm/cm-pdfxe-12pt-summary.pdf), [description](sample-output/cm/cm-pdfxe-12pt-description.pdf), [references](sample-output/cm/cm-pdfxe-12pt-references.pdf), [combined](sample-output/cm/cm-pdfxe-12pt.pdf) | 
 | pdflua |  N/A | [summary](sample-output/cm/cm-pdflua-11pt-summary.pdf), [description](sample-output/cm/cm-pdflua-11pt-description.pdf), [references](sample-output/cm/cm-pdflua-11pt-references.pdf), [combined](sample-output/cm/cm-pdflua-11pt.pdf) | [summary](sample-output/cm/cm-pdflua-12pt-summary.pdf), [description](sample-output/cm/cm-pdflua-12pt-description.pdf), [references](sample-output/cm/cm-pdflua-12pt-references.pdf), [combined](sample-output/cm/cm-pdflua-12pt.pdf) | 
 
-### courier-new
+#### courier-new
 
 |          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
@@ -99,7 +105,7 @@ folder:
 | pdfxe | [summary](sample-output/courier-new/courier-new-pdfxe-10pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdfxe-10pt-description.pdf), [references](sample-output/courier-new/courier-new-pdfxe-10pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdfxe-10pt.pdf) | [summary](sample-output/courier-new/courier-new-pdfxe-11pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdfxe-11pt-description.pdf), [references](sample-output/courier-new/courier-new-pdfxe-11pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdfxe-11pt.pdf) | [summary](sample-output/courier-new/courier-new-pdfxe-12pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdfxe-12pt-description.pdf), [references](sample-output/courier-new/courier-new-pdfxe-12pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdfxe-12pt.pdf) | 
 | pdflua | [summary](sample-output/courier-new/courier-new-pdflua-10pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdflua-10pt-description.pdf), [references](sample-output/courier-new/courier-new-pdflua-10pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdflua-10pt.pdf) | [summary](sample-output/courier-new/courier-new-pdflua-11pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdflua-11pt-description.pdf), [references](sample-output/courier-new/courier-new-pdflua-11pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdflua-11pt.pdf) | [summary](sample-output/courier-new/courier-new-pdflua-12pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdflua-12pt-description.pdf), [references](sample-output/courier-new/courier-new-pdflua-12pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdflua-12pt.pdf) | 
 
-### courier-new (TeX Gyre Cursor)
+#### courier-new (TeX Gyre Cursor)
 
 |          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
@@ -107,7 +113,7 @@ folder:
 | pdfxe | [summary](sample-output/courier-new/courier-new-pdfxe,tg-10pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdfxe,tg-10pt-description.pdf), [references](sample-output/courier-new/courier-new-pdfxe,tg-10pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdfxe,tg-10pt.pdf) | [summary](sample-output/courier-new/courier-new-pdfxe,tg-11pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdfxe,tg-11pt-description.pdf), [references](sample-output/courier-new/courier-new-pdfxe,tg-11pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdfxe,tg-11pt.pdf) | [summary](sample-output/courier-new/courier-new-pdfxe,tg-12pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdfxe,tg-12pt-description.pdf), [references](sample-output/courier-new/courier-new-pdfxe,tg-12pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdfxe,tg-12pt.pdf) | 
 | pdflua | [summary](sample-output/courier-new/courier-new-pdflua,tg-10pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdflua,tg-10pt-description.pdf), [references](sample-output/courier-new/courier-new-pdflua,tg-10pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdflua,tg-10pt.pdf) | [summary](sample-output/courier-new/courier-new-pdflua,tg-11pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdflua,tg-11pt-description.pdf), [references](sample-output/courier-new/courier-new-pdflua,tg-11pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdflua,tg-11pt.pdf) | [summary](sample-output/courier-new/courier-new-pdflua,tg-12pt-summary.pdf), [description](sample-output/courier-new/courier-new-pdflua,tg-12pt-description.pdf), [references](sample-output/courier-new/courier-new-pdflua,tg-12pt-references.pdf), [combined](sample-output/courier-new/courier-new-pdflua,tg-12pt.pdf) | 
 
-### helvetica
+#### helvetica
 
 |          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
@@ -115,7 +121,7 @@ folder:
 | pdfxe | [summary](sample-output/helvetica/helvetica-pdfxe-10pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdfxe-10pt-description.pdf), [references](sample-output/helvetica/helvetica-pdfxe-10pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdfxe-10pt.pdf) | [summary](sample-output/helvetica/helvetica-pdfxe-11pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdfxe-11pt-description.pdf), [references](sample-output/helvetica/helvetica-pdfxe-11pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdfxe-11pt.pdf) | [summary](sample-output/helvetica/helvetica-pdfxe-12pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdfxe-12pt-description.pdf), [references](sample-output/helvetica/helvetica-pdfxe-12pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdfxe-12pt.pdf) | 
 | pdflua | [summary](sample-output/helvetica/helvetica-pdflua-10pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdflua-10pt-description.pdf), [references](sample-output/helvetica/helvetica-pdflua-10pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdflua-10pt.pdf) | [summary](sample-output/helvetica/helvetica-pdflua-11pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdflua-11pt-description.pdf), [references](sample-output/helvetica/helvetica-pdflua-11pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdflua-11pt.pdf) | [summary](sample-output/helvetica/helvetica-pdflua-12pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdflua-12pt-description.pdf), [references](sample-output/helvetica/helvetica-pdflua-12pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdflua-12pt.pdf) | 
 
-### helvetica (TeX Gyre Heros)
+#### helvetica (TeX Gyre Heros)
 
 |          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
@@ -123,7 +129,7 @@ folder:
 | pdfxe | [summary](sample-output/helvetica/helvetica-pdfxe,tg-10pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdfxe,tg-10pt-description.pdf), [references](sample-output/helvetica/helvetica-pdfxe,tg-10pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdfxe,tg-10pt.pdf) | [summary](sample-output/helvetica/helvetica-pdfxe,tg-11pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdfxe,tg-11pt-description.pdf), [references](sample-output/helvetica/helvetica-pdfxe,tg-11pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdfxe,tg-11pt.pdf) | [summary](sample-output/helvetica/helvetica-pdfxe,tg-12pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdfxe,tg-12pt-description.pdf), [references](sample-output/helvetica/helvetica-pdfxe,tg-12pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdfxe,tg-12pt.pdf) | 
 | pdflua | [summary](sample-output/helvetica/helvetica-pdflua,tg-10pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdflua,tg-10pt-description.pdf), [references](sample-output/helvetica/helvetica-pdflua,tg-10pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdflua,tg-10pt.pdf) | [summary](sample-output/helvetica/helvetica-pdflua,tg-11pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdflua,tg-11pt-description.pdf), [references](sample-output/helvetica/helvetica-pdflua,tg-11pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdflua,tg-11pt.pdf) | [summary](sample-output/helvetica/helvetica-pdflua,tg-12pt-summary.pdf), [description](sample-output/helvetica/helvetica-pdflua,tg-12pt-description.pdf), [references](sample-output/helvetica/helvetica-pdflua,tg-12pt-references.pdf), [combined](sample-output/helvetica/helvetica-pdflua,tg-12pt.pdf) | 
 
-### palatino
+#### palatino
 
 |          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
@@ -131,7 +137,7 @@ folder:
 | pdfxe | [summary](sample-output/palatino/palatino-pdfxe-10pt-summary.pdf), [description](sample-output/palatino/palatino-pdfxe-10pt-description.pdf), [references](sample-output/palatino/palatino-pdfxe-10pt-references.pdf), [combined](sample-output/palatino/palatino-pdfxe-10pt.pdf) | [summary](sample-output/palatino/palatino-pdfxe-11pt-summary.pdf), [description](sample-output/palatino/palatino-pdfxe-11pt-description.pdf), [references](sample-output/palatino/palatino-pdfxe-11pt-references.pdf), [combined](sample-output/palatino/palatino-pdfxe-11pt.pdf) | [summary](sample-output/palatino/palatino-pdfxe-12pt-summary.pdf), [description](sample-output/palatino/palatino-pdfxe-12pt-description.pdf), [references](sample-output/palatino/palatino-pdfxe-12pt-references.pdf), [combined](sample-output/palatino/palatino-pdfxe-12pt.pdf) | 
 | pdflua | [summary](sample-output/palatino/palatino-pdflua-10pt-summary.pdf), [description](sample-output/palatino/palatino-pdflua-10pt-description.pdf), [references](sample-output/palatino/palatino-pdflua-10pt-references.pdf), [combined](sample-output/palatino/palatino-pdflua-10pt.pdf) | [summary](sample-output/palatino/palatino-pdflua-11pt-summary.pdf), [description](sample-output/palatino/palatino-pdflua-11pt-description.pdf), [references](sample-output/palatino/palatino-pdflua-11pt-references.pdf), [combined](sample-output/palatino/palatino-pdflua-11pt.pdf) | [summary](sample-output/palatino/palatino-pdflua-12pt-summary.pdf), [description](sample-output/palatino/palatino-pdflua-12pt-description.pdf), [references](sample-output/palatino/palatino-pdflua-12pt-references.pdf), [combined](sample-output/palatino/palatino-pdflua-12pt.pdf) | 
 
-### palatino (TeX Gyre Pagella)
+#### palatino (TeX Gyre Pagella)
 
 |          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
@@ -139,7 +145,7 @@ folder:
 | pdfxe | [summary](sample-output/palatino/palatino-pdfxe,tg-10pt-summary.pdf), [description](sample-output/palatino/palatino-pdfxe,tg-10pt-description.pdf), [references](sample-output/palatino/palatino-pdfxe,tg-10pt-references.pdf), [combined](sample-output/palatino/palatino-pdfxe,tg-10pt.pdf) | [summary](sample-output/palatino/palatino-pdfxe,tg-11pt-summary.pdf), [description](sample-output/palatino/palatino-pdfxe,tg-11pt-description.pdf), [references](sample-output/palatino/palatino-pdfxe,tg-11pt-references.pdf), [combined](sample-output/palatino/palatino-pdfxe,tg-11pt.pdf) | [summary](sample-output/palatino/palatino-pdfxe,tg-12pt-summary.pdf), [description](sample-output/palatino/palatino-pdfxe,tg-12pt-description.pdf), [references](sample-output/palatino/palatino-pdfxe,tg-12pt-references.pdf), [combined](sample-output/palatino/palatino-pdfxe,tg-12pt.pdf) | 
 | pdflua | [summary](sample-output/palatino/palatino-pdflua,tg-10pt-summary.pdf), [description](sample-output/palatino/palatino-pdflua,tg-10pt-description.pdf), [references](sample-output/palatino/palatino-pdflua,tg-10pt-references.pdf), [combined](sample-output/palatino/palatino-pdflua,tg-10pt.pdf) | [summary](sample-output/palatino/palatino-pdflua,tg-11pt-summary.pdf), [description](sample-output/palatino/palatino-pdflua,tg-11pt-description.pdf), [references](sample-output/palatino/palatino-pdflua,tg-11pt-references.pdf), [combined](sample-output/palatino/palatino-pdflua,tg-11pt.pdf) | [summary](sample-output/palatino/palatino-pdflua,tg-12pt-summary.pdf), [description](sample-output/palatino/palatino-pdflua,tg-12pt-description.pdf), [references](sample-output/palatino/palatino-pdflua,tg-12pt-references.pdf), [combined](sample-output/palatino/palatino-pdflua,tg-12pt.pdf) | 
 
-### palatino-linotype
+#### palatino-linotype
 
 |          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
@@ -147,7 +153,7 @@ folder:
 | pdfxe | [summary](sample-output/palatino-linotype/palatino-linotype-pdfxe-10pt-summary.pdf), [description](sample-output/palatino-linotype/palatino-linotype-pdfxe-10pt-description.pdf), [references](sample-output/palatino-linotype/palatino-linotype-pdfxe-10pt-references.pdf), [combined](sample-output/palatino-linotype/palatino-linotype-pdfxe-10pt.pdf) | [summary](sample-output/palatino-linotype/palatino-linotype-pdfxe-11pt-summary.pdf), [description](sample-output/palatino-linotype/palatino-linotype-pdfxe-11pt-description.pdf), [references](sample-output/palatino-linotype/palatino-linotype-pdfxe-11pt-references.pdf), [combined](sample-output/palatino-linotype/palatino-linotype-pdfxe-11pt.pdf) | [summary](sample-output/palatino-linotype/palatino-linotype-pdfxe-12pt-summary.pdf), [description](sample-output/palatino-linotype/palatino-linotype-pdfxe-12pt-description.pdf), [references](sample-output/palatino-linotype/palatino-linotype-pdfxe-12pt-references.pdf), [combined](sample-output/palatino-linotype/palatino-linotype-pdfxe-12pt.pdf) | 
 | pdflua | [summary](sample-output/palatino-linotype/palatino-linotype-pdflua-10pt-summary.pdf), [description](sample-output/palatino-linotype/palatino-linotype-pdflua-10pt-description.pdf), [references](sample-output/palatino-linotype/palatino-linotype-pdflua-10pt-references.pdf), [combined](sample-output/palatino-linotype/palatino-linotype-pdflua-10pt.pdf) | [summary](sample-output/palatino-linotype/palatino-linotype-pdflua-11pt-summary.pdf), [description](sample-output/palatino-linotype/palatino-linotype-pdflua-11pt-description.pdf), [references](sample-output/palatino-linotype/palatino-linotype-pdflua-11pt-references.pdf), [combined](sample-output/palatino-linotype/palatino-linotype-pdflua-11pt.pdf) | [summary](sample-output/palatino-linotype/palatino-linotype-pdflua-12pt-summary.pdf), [description](sample-output/palatino-linotype/palatino-linotype-pdflua-12pt-description.pdf), [references](sample-output/palatino-linotype/palatino-linotype-pdflua-12pt-references.pdf), [combined](sample-output/palatino-linotype/palatino-linotype-pdflua-12pt.pdf) | 
 
-### times-new-roman
+#### times-new-roman
 
 |          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
@@ -155,7 +161,7 @@ folder:
 | pdfxe |  N/A | [summary](sample-output/times-new-roman/times-new-roman-pdfxe-11pt-summary.pdf), [description](sample-output/times-new-roman/times-new-roman-pdfxe-11pt-description.pdf), [references](sample-output/times-new-roman/times-new-roman-pdfxe-11pt-references.pdf), [combined](sample-output/times-new-roman/times-new-roman-pdfxe-11pt.pdf) | [summary](sample-output/times-new-roman/times-new-roman-pdfxe-12pt-summary.pdf), [description](sample-output/times-new-roman/times-new-roman-pdfxe-12pt-description.pdf), [references](sample-output/times-new-roman/times-new-roman-pdfxe-12pt-references.pdf), [combined](sample-output/times-new-roman/times-new-roman-pdfxe-12pt.pdf) | 
 | pdflua |  N/A | [summary](sample-output/times-new-roman/times-new-roman-pdflua-11pt-summary.pdf), [description](sample-output/times-new-roman/times-new-roman-pdflua-11pt-description.pdf), [references](sample-output/times-new-roman/times-new-roman-pdflua-11pt-references.pdf), [combined](sample-output/times-new-roman/times-new-roman-pdflua-11pt.pdf) | [summary](sample-output/times-new-roman/times-new-roman-pdflua-12pt-summary.pdf), [description](sample-output/times-new-roman/times-new-roman-pdflua-12pt-description.pdf), [references](sample-output/times-new-roman/times-new-roman-pdflua-12pt-references.pdf), [combined](sample-output/times-new-roman/times-new-roman-pdflua-12pt.pdf) | 
 
-### times-new-roman (TeX Gyre Termes)
+#### times-new-roman (TeX Gyre Termes)
 
 |          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
 | -------- | ----- | ----- | ----- |
@@ -163,8 +169,7 @@ folder:
 | pdfxe |  N/A | [summary](sample-output/times-new-roman/times-new-roman-pdfxe,tg-11pt-summary.pdf), [description](sample-output/times-new-roman/times-new-roman-pdfxe,tg-11pt-description.pdf), [references](sample-output/times-new-roman/times-new-roman-pdfxe,tg-11pt-references.pdf), [combined](sample-output/times-new-roman/times-new-roman-pdfxe,tg-11pt.pdf) | [summary](sample-output/times-new-roman/times-new-roman-pdfxe,tg-12pt-summary.pdf), [description](sample-output/times-new-roman/times-new-roman-pdfxe,tg-12pt-description.pdf), [references](sample-output/times-new-roman/times-new-roman-pdfxe,tg-12pt-references.pdf), [combined](sample-output/times-new-roman/times-new-roman-pdfxe,tg-12pt.pdf) | 
 | pdflua |  N/A | [summary](sample-output/times-new-roman/times-new-roman-pdflua,tg-11pt-summary.pdf), [description](sample-output/times-new-roman/times-new-roman-pdflua,tg-11pt-description.pdf), [references](sample-output/times-new-roman/times-new-roman-pdflua,tg-11pt-references.pdf), [combined](sample-output/times-new-roman/times-new-roman-pdflua,tg-11pt.pdf) | [summary](sample-output/times-new-roman/times-new-roman-pdflua,tg-12pt-summary.pdf), [description](sample-output/times-new-roman/times-new-roman-pdflua,tg-12pt-description.pdf), [references](sample-output/times-new-roman/times-new-roman-pdflua,tg-12pt-references.pdf), [combined](sample-output/times-new-roman/times-new-roman-pdflua,tg-12pt.pdf) | 
 
-These PDFs can be uploaded to [research.gov](https://research.gov/) on a test
-project, and they shouldn't throw any warnings as provided.
+### Sample Document Details
 
 The sample document `nsf-demo.tex` adds the following packages not
 specifically required by NSF, but really handy for these sorts of proposals:
