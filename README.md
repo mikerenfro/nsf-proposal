@@ -29,8 +29,7 @@ I know).
  - `times-new-roman`
 
 Optionally, add the `tg` class option to use the TeX Gyre equivalents to Courier
-New, Helvetica, Palatino, or Times New Roman (seems to require LuaLaTeX rather
-than XeLaTeX for full functionality).
+New, Helvetica, Palatino, or Times New Roman.
 
 Now write the rest of your proposal, using `\chapter` on down to `\paragraph`
 to break things up. You'll want to use the starred versions of these on the
