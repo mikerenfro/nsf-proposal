@@ -181,7 +181,6 @@ specifically required by NSF, but really handy for these sorts of proposals:
 - [cleveref](https://ctan.org/pkg/cleveref)
 - [enumitem](https://ctan.org/pkg/enumitem) (including inline lists)
 - [graphicx](https://ctan.org/pkg/graphicx)
-- [metalogo](https://ctan.org/pkg/metalogo)
 - [multicol](https://ctan.org/pkg/multicol)
 - [pifont](https://ctan.org/pkg/pifont)
 - [siunitx](https://ctan.org/pkg/siunitx) (including binary units)
