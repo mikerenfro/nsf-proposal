@@ -39,10 +39,11 @@ for font in arial cm courier-new helvetica palatino palatino-linotype times-new-
 done
 
 engine=pdfxe
-usetg=""
 for font in arial cm courier-new helvetica palatino palatino-linotype times-new-roman; do
-    for fontsize in 10pt 11pt 12pt; do
-        make_build_check_document
+    for usetg in ",tg" ""; do
+        for fontsize in 10pt 11pt 12pt; do
+            make_build_check_document
+        done
     done
 done
 
