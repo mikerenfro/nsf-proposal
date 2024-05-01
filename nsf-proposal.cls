@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nsf-proposal}[2024/04/18 memoir class for NSF proposals]
+\ProvidesClass{nsf-proposal}[2024/04/30 memoir class for NSF proposals]
 \RequirePackage{xstring} % for \IfEqCase and \IfEq
 \RequirePackage{iftex} % to detect TeX engine
 
