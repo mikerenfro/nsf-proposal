@@ -26,6 +26,7 @@
 
 \usepackage[sorting=none,sortcites=true,citestyle=numeric-comp]{biblatex}
 \usepackage{pifont,xcolor} % for project needs table
+\usepackage{calc} % to calculate width of items
 \setlength\bibitemsep{\baselineskip}
 \addbibresource{nsf-demo.bib}
 \begin{document}
@@ -47,7 +48,7 @@ TN Tech has a strong history using HPC in workforce development at all levels.
 
 \section{Information about the Proposal}
 
-\begin{description}[labelwidth=1.7in,leftmargin=\labelwidth,labelsep=0pt]
+\begin{description}[labelwidth={\widthof{\textbf{Instrument Location: }}},leftmargin=\labelwidth,labelsep=0pt]
 \item[Instrument Location:] Tennessee Tech University, Clement Hall Room NNN
 \item[Instrument Type:] HPC cluster with high-speed networking and data storage for active jobs
 \end{description}
