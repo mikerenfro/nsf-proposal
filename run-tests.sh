@@ -51,8 +51,23 @@ done
 # TeX Gyre doesn't apply to Arial or Computer Modern -- remove the duplicate PDFs
 find sample-output/{arial,cm} -name '*,tg-*.pdf' -print0 | xargs -0 rm
 
+cat <<EOD
+| Engine:      | pdf*       | pdf*       | pdf*       | xe*        | xe*        | xe*        | lua*       | lua*       | lua*       |
+| -----------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
+| **Font**     | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
+EOD
+
 for font in arial cm courier-new helvetica palatino palatino-linotype times-new-roman; do
     for usetg in "" ",tg"; do
+        case ${font} in
+            "arial") fontname="Arial";;
+            "cm") fontname="Computer Modern";;
+            "courier-new") fontname="Courier New";;
+            "helvetica") fontname="Helvetica";;
+            "palatino") fontname="Palatino";;
+            "palatino-linotype") fontname="Palatino Linotype";;
+            "times-new-roman") fontname="Times New Roman";;
+        esac
         suffix=""
         case ${font}${usetg} in
             "arial,tg") break;;
@@ -63,32 +78,25 @@ for font in arial cm courier-new helvetica palatino palatino-linotype times-new-
             "palatino-linotype,tg") break;;
             "times-new-roman,tg") suffix=" (TeX Gyre Termes)";;
         esac
-        cat <<EOD
-### ${font}${suffix}
-
-|          | 10&nbsp;pt | 11&nbsp;pt | 12&nbsp;pt |
-| -------- | ----- | ----- | ----- |
-EOD
+        echo -ne "| ${fontname}${suffix} | "
         for engine in pdf pdfxe pdflua; do
-            echo -ne "| ${engine} | "
             for size in 10 11 12; do
                 if [ -r sample-output/${font}/${font}-${engine}${usetg}-${size}pt.pdf ]; then
                     if [ -r sample-output/${font}/${font}-${engine}${usetg}-${size}pt-summary.pdf ]; then
-                        echo -ne "[summary](sample-output/${font}/${font}-${engine}${usetg}-${size}pt-summary.pdf), "
+                        echo -ne "[S](sample-output/${font}/${font}-${engine}${usetg}-${size}pt-summary.pdf) "
                     fi
                     if [ -r sample-output/${font}/${font}-${engine}${usetg}-${size}pt-description.pdf ]; then
-                        echo -ne "[description](sample-output/${font}/${font}-${engine}${usetg}-${size}pt-description.pdf), "
+                        echo -ne "[D](sample-output/${font}/${font}-${engine}${usetg}-${size}pt-description.pdf) "
                     fi
                     if [ -r sample-output/${font}/${font}-${engine}${usetg}-${size}pt-references.pdf ]; then
-                        echo -ne "[references](sample-output/${font}/${font}-${engine}${usetg}-${size}pt-references.pdf), "
+                        echo -ne "[R](sample-output/${font}/${font}-${engine}${usetg}-${size}pt-references.pdf) "
                     fi
-                    echo -ne "[combined](sample-output/${font}/${font}-${engine}${usetg}-${size}pt.pdf) | "
+                    echo -ne "[C](sample-output/${font}/${font}-${engine}${usetg}-${size}pt.pdf) | "
                 else
                     echo -ne " N/A | "
                 fi
             done
-            echo ""
         done
-        echo ""
+    echo ""
     done
 done
