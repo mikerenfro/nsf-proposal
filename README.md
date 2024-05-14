@@ -129,6 +129,6 @@ We also made a basic Gantt chart for one of the proposals. It uses
 [`pgfgantt`](https://ctan.org/pkg/pgfgantt), with just a bit of abuse to let
 us have additional columns for which team member bears primary responsibility
 or secondary responsibility. You'll find its source and output in the
-`images/` folder.
+[`images/`](https://github.com/mikerenfro/nsf-proposal/tree/main/images) folder.
 
 ![Sample Gantt chart](sample-output/nsf-demo-sample-gantt.png)
