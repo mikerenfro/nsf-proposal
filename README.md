@@ -56,19 +56,19 @@ comments, so it should be relatively readable (over half of that is
 for handling different base fonts and sizes).
 The documentclass depends on the following packages:
 
-- fontspec (if using LuaLaTeX or XeLaTeX)
-- helvet (for option `helvetica`)
-- hyperref
-- iftex
-- mathpazo (for option `palatino` and `palatino-linotype`)
-- sansmath (for option `arial` and `helvetica`)
-- xstring
+- [`fontspec`](http://ctan.org/pkg/fontspec) (if using LuaLaTeX or XeLaTeX)
+- [`helvet`](https://ctan.org/pkg/helvet) (for option `helvetica`)
+- [`hyperref`](https://ctan.org/pkg/hyperref)
+- [`iftex`](https://ctan.org/pkg/hyperref)
+- [`mathpazo`](https://ctan.org/pkg/mathpazo) (for option `palatino` and `palatino-linotype`)
+- [`sansmath`](https://ctan.org/pkg/sansmath) (for option `arial` and `helvetica`)
+- [`xstring`](https://ctan.org/pkg/xstring)
 
 Sample source files for a proposal can be found in:
 
-- [nsf-demo.tex](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo.tex)
-- [nsf-demo-content.tex](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo-content.tex)
-- [nsf-demo.bib](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo.bib)
+- [`nsf-demo.tex`](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo.tex)
+- [`nsf-demo-content.tex`](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo-content.tex)
+- [`nsf-demo.bib`](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo.bib)
 
 ### Sample Output
 
@@ -102,18 +102,18 @@ the NSF PAPPG (e.g., Computer Modern at 10 pt).
 The sample document [`nsf-demo.tex`](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo.tex) (and [`nsf-demo-content.tex`](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo-content.tex)) adds the following packages not
 specifically required by NSF, but really handy for these sorts of proposals:
 
-- [array](https://ctan.org/pkg/array) (including a ragged right paragraph column type `P`)
-- [biblatex](https://ctan.org/pkg/biblatex)
-- [booktabs](https://ctan.org/pkg/booktabs) (with a reduced value for `\tabcolsep`)
-- [calc](https://ctan.org/pkg/calc)
-- [cleveref](https://ctan.org/pkg/cleveref)
-- [enumitem](https://ctan.org/pkg/enumitem) (including inline lists)
-- [graphicx](https://ctan.org/pkg/graphicx)
-- [multicol](https://ctan.org/pkg/multicol)
-- [pifont](https://ctan.org/pkg/pifont)
-- [siunitx](https://ctan.org/pkg/siunitx) (including binary units)
-- [xcolor](https://ctan.org/pkg/xcolor)
-- [xurl](https://ctan.org/pkg/xurl)
+- [`array`](https://ctan.org/pkg/array) (including a ragged right paragraph column type `P`)
+- [`biblatex`](https://ctan.org/pkg/biblatex)
+- [`booktabs`](https://ctan.org/pkg/booktabs) (with a reduced value for `\tabcolsep`)
+- [`calc`](https://ctan.org/pkg/calc)
+- [`cleveref`](https://ctan.org/pkg/cleveref)
+- [`enumitem`](https://ctan.org/pkg/enumitem) (including inline lists)
+- [`graphicx`](https://ctan.org/pkg/graphicx)
+- [`multicol`](https://ctan.org/pkg/multicol)
+- [`pifont`](https://ctan.org/pkg/pifont)
+- [`siunitx`](https://ctan.org/pkg/siunitx) (including binary units)
+- [`xcolor`](https://ctan.org/pkg/xcolor)
+- [`xurl`](https://ctan.org/pkg/xurl)
 
 As shown in the sample document, you can use a `\chapter*` and `\section*`
 for the 1-page Project Summary, `\chapter`, `\section`, `\subsection`,
