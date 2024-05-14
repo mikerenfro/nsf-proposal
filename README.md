@@ -123,7 +123,7 @@ by default.
 
 Larger font sizes may trigger hyphenation problems for some words and drive
 some lines into the right margin, so be sure to add hyphenation as necessary
-(already done for the `hurt2021` reference in [nsf-demo.bib](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo.bib).
+(already done for the `hurt2021` reference in [`nsf-demo.bib`](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo.bib)).
 
 We also made a basic Gantt chart for one of the proposals. It uses
 [`pgfgantt`](https://ctan.org/pkg/pgfgantt), with just a bit of abuse to let
