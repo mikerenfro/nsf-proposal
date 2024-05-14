@@ -66,8 +66,8 @@ The documentclass depends on the following packages:
 
 Sample source files for a proposal can be found in:
 
-- nsf-demo.tex
-- nsf-demo.bib
+- [nsf-demo.tex](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo.tex)
+- [nsf-demo.bib](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo.bib)
 
 ### Sample Output
 
@@ -98,7 +98,7 @@ the NSF PAPPG (e.g., Computer Modern at 10 pt).
 
 ### Sample Document Details
 
-The sample document `nsf-demo.tex` adds the following packages not
+The sample document [`nsf-demo.tex`](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo.tex) adds the following packages not
 specifically required by NSF, but really handy for these sorts of proposals:
 
 - [array](https://ctan.org/pkg/array) (including a ragged right paragraph column type `P`)
@@ -122,7 +122,7 @@ by default.
 
 Larger font sizes may trigger hyphenation problems for some words and drive
 some lines into the right margin, so be sure to add hyphenation as necessary
-(already done for the `hurt2021` reference in nsf-demo.bib).
+(already done for the `hurt2021` reference in [nsf-demo.bib](https://github.com/mikerenfro/nsf-proposal/blob/main/nsf-demo.bib).
 
 We also made a basic Gantt chart for one of the proposals. It uses
 [`pgfgantt`](https://ctan.org/pkg/pgfgantt), with just a bit of abuse to let
