@@ -17,7 +17,7 @@ I know).
 
 ## TL;DR
 
-`\documentclass[fontsize,basefont]` where `fontsize` is `10pt`, `11pt`, or
+`\documentclass[fontsize,basefont]{nsf-proposal}` where `fontsize` is `10pt`, `11pt`, or
 `12pt`, and `basefont` is any of:
 
  - `arial`
