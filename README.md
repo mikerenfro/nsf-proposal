@@ -73,7 +73,7 @@ Sample source files for a proposal can be found in:
 ### Sample Output
 
 
-The following tables are grouped by base font, latex engine, and font size.
+The following table is grouped by base font, latex engine, and font size.
 The "S", "D", and "R" PDFs represent the one-page
 summary, the <=15-page project description, and the bibliography for a sample
 NSF proposal. These PDFs can be uploaded to [research.gov](https://research.gov/)
